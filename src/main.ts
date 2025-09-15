@@ -1,3 +1,4 @@
+//SNACK 1
 let dato: unknown;
 if (typeof dato === 'string') {
   console.log(dato.toUpperCase());
@@ -13,4 +14,13 @@ if (typeof dato === 'string') {
   dato.then((msg) => console.log(msg))
 } else {
   console.log('Tipo non supportato');
+}
+
+//SNACK 2
+type Dipendente = {
+  nome: string,
+  cognome: string,
+  annoNascita: number,
+  sesso: 'm' | 'f',
+  anniDiServizio: number[]
 }
