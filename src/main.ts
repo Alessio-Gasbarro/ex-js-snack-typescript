@@ -1,4 +1,4 @@
-//SNACK 1
+//SNACK 1 + Bonus
 let dato: unknown;
 if (typeof dato === 'string') {
   console.log(dato.toUpperCase());
@@ -16,11 +16,13 @@ if (typeof dato === 'string') {
   console.log('Tipo non supportato');
 }
 
-//SNACK 2
+//SNACK 2 + Bonus
 type Dipendente = {
   nome: string,
   cognome: string,
   annoNascita: number,
   sesso: 'm' | 'f',
-  anniDiServizio: number[]
+  anniDiServizio: number[],
+  readonly emailAziendale: string,
+  contratto: 'indeterminato' | 'determinato' | 'freelance',
 }
